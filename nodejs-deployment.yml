@@ -1,21 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nodejs-deployment
+  creationTimestamp: null
   labels:
-    app: nodejs
+    app: nodejs-deployment
+  name: nodejs-deployment
+  namespace: nodejsTest
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nodejs
+      app: nodejs-deployment
+  strategy: {}
   template:
     metadata:
+      creationTimestamp: null
       labels:
-        app: nodejs 
+        app: nodejs-deployment
     spec:
       containers:
-      - name: nodeserver
-        image: take1995/nodejstest:latest
-        ports:
-        - containerPort: 3000
+      - image: take1995/nodejstest:latest
+        resources: {}
+status: {}
