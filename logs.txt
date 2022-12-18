@@ -1,0 +1,126 @@
+* 
+* ==> Audit <==
+* |---------|----------------------------|----------|---------------------|---------|---------------------|---------------------|
+| Command |            Args            | Profile  |        User         | Version |     Start Time      |      End Time       |
+|---------|----------------------------|----------|---------------------|---------|---------------------|---------------------|
+| start   |                            | minikube | ADV-MADM-HP004\Take | v1.28.0 | 14 Dec 22 16:43 +07 |                     |
+| start   |                            | minikube | ADV-MADM-HP004\Take | v1.28.0 | 14 Dec 22 17:10 +07 | 14 Dec 22 17:12 +07 |
+| kubectl | -- get pods                | minikube | ADV-MADM-HP004\Take | v1.28.0 | 14 Dec 22 17:12 +07 | 14 Dec 22 17:13 +07 |
+| kubectl | -- get pods -n kube-system | minikube | ADV-MADM-HP004\Take | v1.28.0 | 14 Dec 22 17:14 +07 | 14 Dec 22 17:14 +07 |
+| addons  | list                       | minikube | ADV-MADM-HP004\Take | v1.28.0 | 14 Dec 22 17:21 +07 | 14 Dec 22 17:21 +07 |
+| stop    |                            | minikube | ADV-MADM-HP004\Take | v1.28.0 | 14 Dec 22 17:33 +07 | 14 Dec 22 17:33 +07 |
+| kubectl | -- get pods                | minikube | ADV-MADM-HP004\Take | v1.28.0 | 15 Dec 22 15:47 +07 |                     |
+| kubectl | -- get pods                | minikube | ADV-MADM-HP004\Take | v1.28.0 | 15 Dec 22 15:47 +07 |                     |
+| start   |                            | minikube | ADV-MADM-HP004\Take | v1.28.0 | 15 Dec 22 15:52 +07 |                     |
+| start   |                            | minikube | ADV-MADM-HP004\Take | v1.28.0 | 15 Dec 22 15:53 +07 |                     |
+| start   |                            | minikube | ADV-MADM-HP004\Take | v1.28.0 | 15 Dec 22 15:53 +07 |                     |
+| start   |                            | minikube | ADV-MADM-HP004\Take | v1.28.0 | 17 Dec 22 21:15 +07 |                     |
+| start   |                            | minikube | ADV-MADM-HP004\Take | v1.28.0 | 17 Dec 22 21:16 +07 | 17 Dec 22 21:18 +07 |
+| start   |                            | minikube | ADV-MADM-HP004\Take | v1.28.0 | 17 Dec 22 21:26 +07 | 17 Dec 22 21:28 +07 |
+| service | nodeapp-service            | minikube | ADV-MADM-HP004\Take | v1.28.0 | 17 Dec 22 21:52 +07 |                     |
+| service | nodeapp-service            | minikube | ADV-MADM-HP004\Take | v1.28.0 | 17 Dec 22 21:52 +07 | 17 Dec 22 21:53 +07 |
+| service | nodeapp-service            | minikube | ADV-MADM-HP004\Take | v1.28.0 | 17 Dec 22 21:54 +07 | 17 Dec 22 21:54 +07 |
+| start   |                            | minikube | ADV-MADM-HP004\Take | v1.28.0 | 18 Dec 22 19:56 +07 |                     |
+| start   |                            | minikube | ADV-MADM-HP004\Take | v1.28.0 | 18 Dec 22 19:56 +07 | 18 Dec 22 19:58 +07 |
+| start   |                            | minikube | ADV-MADM-HP004\Take | v1.28.0 | 18 Dec 22 20:47 +07 |                     |
+|---------|----------------------------|----------|---------------------|---------|---------------------|---------------------|
+
+* 
+* ==> Last Start <==
+* Log file created at: 2022/12/18 20:47:54
+Running on machine: ADV-MADM-HP004
+Binary: Built with gc go1.19.2 for windows/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I1218 20:47:54.844336   10080 out.go:296] Setting OutFile to fd 1072 ...
+I1218 20:47:54.845336   10080 out.go:343] TERM=xterm,COLORTERM=, which probably does not support color
+I1218 20:47:54.845336   10080 out.go:309] Setting ErrFile to fd 1072...
+I1218 20:47:54.845336   10080 out.go:343] TERM=xterm,COLORTERM=, which probably does not support color
+W1218 20:47:54.856337   10080 root.go:311] Error reading config file at C:\Users\Take\.minikube\config\config.json: open C:\Users\Take\.minikube\config\config.json: The system cannot find the file specified.
+I1218 20:47:54.859336   10080 out.go:303] Setting JSON to false
+I1218 20:47:54.866341   10080 start.go:116] hostinfo: {"hostname":"ADV-MADM-HP004","uptime":85925,"bootTime":1671285349,"procs":325,"os":"windows","platform":"Microsoft Windows 11 Pro","platformFamily":"Standalone Workstation","platformVersion":"10.0.22000 Build 22000","kernelVersion":"10.0.22000 Build 22000","kernelArch":"x86_64","virtualizationSystem":"","virtualizationRole":"","hostId":"077d50e0-36ec-44e7-bf9b-f40da0ccc93b"}
+W1218 20:47:54.866341   10080 start.go:124] gopshost.Virtualization returned error: not implemented yet
+I1218 20:47:54.868972   10080 out.go:177] * minikube v1.28.0 on Microsoft Windows 11 Pro 10.0.22000 Build 22000
+I1218 20:47:54.870556   10080 notify.go:220] Checking for updates...
+I1218 20:47:54.872408   10080 config.go:180] Loaded profile config "minikube": Driver=hyperv, ContainerRuntime=docker, KubernetesVersion=v1.25.3
+I1218 20:47:54.872408   10080 driver.go:365] Setting default libvirt URI to qemu:///system
+I1218 20:47:58.207782   10080 out.go:177] * Using the hyperv driver based on existing profile
+I1218 20:47:58.210417   10080 start.go:282] selected driver: hyperv
+I1218 20:47:58.210417   10080 start.go:808] validating driver "hyperv" against &{Name:minikube KeepContext:false EmbedCerts:false MinikubeISO:https://storage.googleapis.com/minikube/iso/minikube-v1.28.0-amd64.iso KicBaseImage:gcr.io/k8s-minikube/kicbase:v0.0.36@sha256:8debc1b6a335075c5f99bfbf131b4f5566f68c6500dc5991817832e55fcc9456 Memory:4000 CPUs:2 DiskSize:20000 VMDriver: Driver:hyperv HyperkitVpnKitSock: HyperkitVSockPorts:[] DockerEnv:[] ContainerVolumeMounts:[] InsecureRegistry:[] RegistryMirror:[] HostOnlyCIDR:192.168.59.1/24 HypervVirtualSwitch: HypervUseExternalSwitch:false HypervExternalAdapter: KVMNetwork:default KVMQemuURI:qemu:///system KVMGPU:false KVMHidden:false KVMNUMACount:1 APIServerPort:0 DockerOpt:[] DisableDriverMounts:false NFSShare:[] NFSSharesRoot:/nfsshares UUID: NoVTXCheck:false DNSProxy:false HostDNSResolver:true HostOnlyNicType:virtio NatNicType:virtio SSHIPAddress: SSHUser:root SSHKey: SSHPort:22 KubernetesConfig:{KubernetesVersion:v1.25.3 ClusterName:minikube Namespace:default APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin: FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: RegistryAliases: ExtraOptions:[] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI: NodeIP: NodePort:8443 NodeName:} Nodes:[{Name: IP:172.19.203.69 Port:8443 KubernetesVersion:v1.25.3 ContainerRuntime:docker ControlPlane:true Worker:true}] Addons:map[ambassador:false auto-pause:false cloud-spanner:false csi-hostpath-driver:false dashboard:false default-storageclass:true efk:false freshpod:false gcp-auth:false gvisor:false headlamp:false helm-tiller:false inaccel:false ingress:false ingress-dns:false istio:false istio-provisioner:false kong:false kubevirt:false logviewer:false metallb:false metrics-server:false nvidia-driver-installer:false nvidia-gpu-device-plugin:false olm:false pod-security-policy:false portainer:false registry:false registry-aliases:false registry-creds:false storage-provisioner:true storage-provisioner-gluster:false volumesnapshots:false] CustomAddonImages:map[] CustomAddonRegistries:map[] VerifyComponents:map[apiserver:true system_pods:true] StartHostTimeout:6m0s ScheduledStop:<nil> ExposedPorts:[] ListenAddress: Network: Subnet: MultiNodeRequested:false ExtraDisks:0 CertExpiration:26280h0m0s Mount:false MountString:C:\Users\Take:/minikube-host Mount9PVersion:9p2000.L MountGID:docker MountIP: MountMSize:262144 MountOptions:[] MountPort:0 MountType:9p MountUID:docker BinaryMirror: DisableOptimizations:false DisableMetrics:false CustomQemuFirmwarePath: SocketVMnetClientPath:/opt/socket_vmnet/bin/socket_vmnet_client SocketVMnetPath:/var/run/socket_vmnet}
+I1218 20:47:58.210417   10080 start.go:819] status for hyperv: {Installed:true Healthy:true Running:false NeedsImprovement:false Error:<nil> Reason: Fix: Doc: Version:}
+I1218 20:47:58.240778   10080 cni.go:95] Creating CNI manager for ""
+I1218 20:47:58.240778   10080 cni.go:169] CNI unnecessary in this configuration, recommending no CNI
+I1218 20:47:58.240778   10080 start_flags.go:317] config:
+{Name:minikube KeepContext:false EmbedCerts:false MinikubeISO:https://storage.googleapis.com/minikube/iso/minikube-v1.28.0-amd64.iso KicBaseImage:gcr.io/k8s-minikube/kicbase:v0.0.36@sha256:8debc1b6a335075c5f99bfbf131b4f5566f68c6500dc5991817832e55fcc9456 Memory:4000 CPUs:2 DiskSize:20000 VMDriver: Driver:hyperv HyperkitVpnKitSock: HyperkitVSockPorts:[] DockerEnv:[] ContainerVolumeMounts:[] InsecureRegistry:[] RegistryMirror:[] HostOnlyCIDR:192.168.59.1/24 HypervVirtualSwitch: HypervUseExternalSwitch:false HypervExternalAdapter: KVMNetwork:default KVMQemuURI:qemu:///system KVMGPU:false KVMHidden:false KVMNUMACount:1 APIServerPort:0 DockerOpt:[] DisableDriverMounts:false NFSShare:[] NFSSharesRoot:/nfsshares UUID: NoVTXCheck:false DNSProxy:false HostDNSResolver:true HostOnlyNicType:virtio NatNicType:virtio SSHIPAddress: SSHUser:root SSHKey: SSHPort:22 KubernetesConfig:{KubernetesVersion:v1.25.3 ClusterName:minikube Namespace:default APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin: FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: RegistryAliases: ExtraOptions:[] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI: NodeIP: NodePort:8443 NodeName:} Nodes:[{Name: IP:172.19.203.69 Port:8443 KubernetesVersion:v1.25.3 ContainerRuntime:docker ControlPlane:true Worker:true}] Addons:map[ambassador:false auto-pause:false cloud-spanner:false csi-hostpath-driver:false dashboard:false default-storageclass:true efk:false freshpod:false gcp-auth:false gvisor:false headlamp:false helm-tiller:false inaccel:false ingress:false ingress-dns:false istio:false istio-provisioner:false kong:false kubevirt:false logviewer:false metallb:false metrics-server:false nvidia-driver-installer:false nvidia-gpu-device-plugin:false olm:false pod-security-policy:false portainer:false registry:false registry-aliases:false registry-creds:false storage-provisioner:true storage-provisioner-gluster:false volumesnapshots:false] CustomAddonImages:map[] CustomAddonRegistries:map[] VerifyComponents:map[apiserver:true system_pods:true] StartHostTimeout:6m0s ScheduledStop:<nil> ExposedPorts:[] ListenAddress: Network: Subnet: MultiNodeRequested:false ExtraDisks:0 CertExpiration:26280h0m0s Mount:false MountString:C:\Users\Take:/minikube-host Mount9PVersion:9p2000.L MountGID:docker MountIP: MountMSize:262144 MountOptions:[] MountPort:0 MountType:9p MountUID:docker BinaryMirror: DisableOptimizations:false DisableMetrics:false CustomQemuFirmwarePath: SocketVMnetClientPath:/opt/socket_vmnet/bin/socket_vmnet_client SocketVMnetPath:/var/run/socket_vmnet}
+I1218 20:47:58.241806   10080 iso.go:124] acquiring lock: {Name:mk1829869385d0ea4f138fed48dd8a35addeac96 Clock:{} Delay:500ms Timeout:10m0s Cancel:<nil>}
+I1218 20:47:58.244997   10080 out.go:177] * Starting control plane node minikube in cluster minikube
+I1218 20:47:58.246100   10080 preload.go:132] Checking if preload exists for k8s version v1.25.3 and runtime docker
+I1218 20:47:58.246626   10080 preload.go:148] Found local preload: C:\Users\Take\.minikube\cache\preloaded-tarball\preloaded-images-k8s-v18-v1.25.3-docker-overlay2-amd64.tar.lz4
+I1218 20:47:58.246626   10080 cache.go:57] Caching tarball of preloaded images
+I1218 20:47:58.247152   10080 preload.go:174] Found C:\Users\Take\.minikube\cache\preloaded-tarball\preloaded-images-k8s-v18-v1.25.3-docker-overlay2-amd64.tar.lz4 in cache, skipping download
+I1218 20:47:58.247152   10080 cache.go:60] Finished verifying existence of preloaded tar for  v1.25.3 on docker
+I1218 20:47:58.247681   10080 profile.go:148] Saving config to C:\Users\Take\.minikube\profiles\minikube\config.json ...
+I1218 20:47:58.248717   10080 cache.go:208] Successfully downloaded all kic artifacts
+I1218 20:47:58.248717   10080 start.go:364] acquiring machines lock for minikube: {Name:mkceeecf830024250db7932cb85bf3de75ab8ce0 Clock:{} Delay:500ms Timeout:13m0s Cancel:<nil>}
+I1218 20:47:58.248717   10080 start.go:368] acquired machines lock for "minikube" in 0s
+I1218 20:47:58.249293   10080 start.go:96] Skipping create...Using existing machine configuration
+I1218 20:47:58.249293   10080 fix.go:55] fixHost starting: 
+I1218 20:47:58.249798   10080 main.go:134] libmachine: [executing ==>] : C:\windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive ( Hyper-V\Get-VM minikube ).state
+I1218 20:48:00.586875   10080 main.go:134] libmachine: [stdout =====>] : Running
+
+I1218 20:48:00.586875   10080 main.go:134] libmachine: [stderr =====>] : 
+I1218 20:48:00.589818   10080 fix.go:103] recreateIfNeeded on minikube: state=Running err=<nil>
+W1218 20:48:00.589818   10080 fix.go:129] unexpected machine state, will restart: <nil>
+I1218 20:48:00.593809   10080 out.go:177] * Updating the running hyperv "minikube" VM ...
+I1218 20:48:00.595561   10080 machine.go:88] provisioning docker machine ...
+I1218 20:48:00.595561   10080 buildroot.go:166] provisioning hostname "minikube"
+I1218 20:48:00.596118   10080 main.go:134] libmachine: [executing ==>] : C:\windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive ( Hyper-V\Get-VM minikube ).state
+I1218 20:48:02.589952   10080 main.go:134] libmachine: [stdout =====>] : Running
+
+I1218 20:48:02.589952   10080 main.go:134] libmachine: [stderr =====>] : 
+I1218 20:48:02.589952   10080 main.go:134] libmachine: [executing ==>] : C:\windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive (( Hyper-V\Get-VM minikube ).networkadapters[0]).ipaddresses[0]
+I1218 20:48:09.812489   10080 main.go:134] libmachine: [stdout =====>] : 
+I1218 20:48:09.812489   10080 main.go:134] libmachine: [stderr =====>] : 
+I1218 20:48:09.812489   10080 machine.go:91] provisioned docker machine in 9.2169285s
+I1218 20:48:09.812489   10080 fix.go:57] fixHost completed within 11.563196s
+I1218 20:48:09.812489   10080 start.go:83] releasing machines lock for "minikube", held for 11.5637719s
+W1218 20:48:09.815174   10080 start.go:603] error starting host: provision: IP not found
+W1218 20:48:09.815174   10080 out.go:239] ! StartHost failed, but will try again: provision: IP not found
+I1218 20:48:09.815174   10080 start.go:618] Will try again in 5 seconds ...
+I1218 20:48:14.830617   10080 start.go:364] acquiring machines lock for minikube: {Name:mkceeecf830024250db7932cb85bf3de75ab8ce0 Clock:{} Delay:500ms Timeout:13m0s Cancel:<nil>}
+I1218 20:48:14.830617   10080 start.go:368] acquired machines lock for "minikube" in 0s
+I1218 20:48:14.830617   10080 start.go:96] Skipping create...Using existing machine configuration
+I1218 20:48:14.830617   10080 fix.go:55] fixHost starting: 
+I1218 20:48:14.830617   10080 main.go:134] libmachine: [executing ==>] : C:\windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive ( Hyper-V\Get-VM minikube ).state
+I1218 20:48:17.107734   10080 main.go:134] libmachine: [stdout =====>] : Running
+
+I1218 20:48:17.107734   10080 main.go:134] libmachine: [stderr =====>] : 
+I1218 20:48:17.107734   10080 fix.go:103] recreateIfNeeded on minikube: state=Running err=<nil>
+W1218 20:48:17.107734   10080 fix.go:129] unexpected machine state, will restart: <nil>
+I1218 20:48:17.112268   10080 out.go:177] * Updating the running hyperv "minikube" VM ...
+I1218 20:48:17.113896   10080 machine.go:88] provisioning docker machine ...
+I1218 20:48:17.113896   10080 buildroot.go:166] provisioning hostname "minikube"
+I1218 20:48:17.113896   10080 main.go:134] libmachine: [executing ==>] : C:\windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive ( Hyper-V\Get-VM minikube ).state
+I1218 20:48:19.501229   10080 main.go:134] libmachine: [stdout =====>] : Running
+
+I1218 20:48:19.501229   10080 main.go:134] libmachine: [stderr =====>] : 
+I1218 20:48:19.501229   10080 main.go:134] libmachine: [executing ==>] : C:\windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive (( Hyper-V\Get-VM minikube ).networkadapters[0]).ipaddresses[0]
+I1218 20:48:27.076213   10080 main.go:134] libmachine: [stdout =====>] : 
+I1218 20:48:27.076213   10080 main.go:134] libmachine: [stderr =====>] : 
+I1218 20:48:27.076213   10080 machine.go:91] provisioned docker machine in 9.9623161s
+I1218 20:48:27.076213   10080 fix.go:57] fixHost completed within 12.2455956s
+I1218 20:48:27.076213   10080 start.go:83] releasing machines lock for "minikube", held for 12.2455956s
+W1218 20:48:27.079137   10080 out.go:239] * Failed to start hyperv VM. Running "minikube delete" may fix it: provision: IP not found
+I1218 20:48:27.080792   10080 out.go:177] 
+W1218 20:48:27.083001   10080 out.go:239] X Exiting due to GUEST_PROVISION: Failed to start host: provision: IP not found
+W1218 20:48:27.083001   10080 out.go:239] * 
+W1218 20:48:27.087906   10080 out.go:239] ╭─────────────────────────────────────────────────────────────────────────────────────────────╮
+│                                                                                             │
+│    * If the above advice does not help, please let us know:                                 │
+│      https://github.com/kubernetes/minikube/issues/new/choose                               │
+│                                                                                             │
+│    * Please run `minikube logs --file=logs.txt` and attach logs.txt to the GitHub issue.    │
+│                                                                                             │
+╰─────────────────────────────────────────────────────────────────────────────────────────────╯
+I1218 20:48:27.088976   10080 out.go:177] 
+
+* 
